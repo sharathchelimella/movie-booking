@@ -4,8 +4,9 @@ import { io } from 'socket.io-client';
 import { Armchair, Info } from 'lucide-react';
 import axios from 'axios';
 
-// Connect to backend (adjust URL in production)
-const socket = io('http://localhost:5000');
+// Connect to backend (adjust URL in production by removing /api from the REST URL)
+const socketUrl = import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000';
+const socket = io(socketUrl);
 
 const mockRows = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 const colsPerRow = 12;
