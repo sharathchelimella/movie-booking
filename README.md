@@ -11,7 +11,7 @@ Show Image
 
 🌐 Live Demo
 
-🚀 Deployed at: https://movie-booking-delta-self.vercel.app
+🚀 Deployed at: movie-booking-delta-self.vercel.app
 
 
 📌 Table of Contents
